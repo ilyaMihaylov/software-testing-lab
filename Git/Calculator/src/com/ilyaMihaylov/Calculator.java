@@ -16,16 +16,16 @@ public class Calculator {
 
         switch (input.next()){
             case "+":
-                System.out.println(Operations.add(firstNumber,secondNumber));
+                Messages.printResult(firstNumber, secondNumber, Operations.add(firstNumber,secondNumber), "+");
                 break;
             case "-":
-                System.out.println(Operations.subtract(firstNumber,secondNumber));
+                Messages.printResult(firstNumber, secondNumber, Operations.subtract(firstNumber,secondNumber), "-");
                 break;
             case "*":
-                System.out.println(Operations.multiply(firstNumber,secondNumber));
+                Messages.printResult(firstNumber, secondNumber, Operations.multiply(firstNumber,secondNumber), "*");
                 break;
             case "/":
-                System.out.println(Operations.divide(firstNumber,secondNumber));
+                Messages.printResult(firstNumber, secondNumber, Operations.divide(firstNumber,secondNumber), "/");
                 break;
             default:
                 System.out.println("Illegal Operation");
