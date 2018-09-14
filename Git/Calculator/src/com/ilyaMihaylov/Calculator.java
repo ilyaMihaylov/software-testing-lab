@@ -16,27 +16,19 @@ public class Calculator {
 
         switch (input.next()){
             case "+":
-                System.out.println(add(firstNumber,secondNumber));
+                System.out.println(Operations.add(firstNumber,secondNumber));
                 break;
             case "-":
-                System.out.println(subtract(firstNumber,secondNumber));
+                System.out.println(Operations.subtract(firstNumber,secondNumber));
                 break;
             case "*":
-                System.out.println(multiply(firstNumber,secondNumber));
+                System.out.println(Operations.multiply(firstNumber,secondNumber));
                 break;
             case "/":
-                System.out.println(divide(firstNumber,secondNumber));
+                System.out.println(Operations.divide(firstNumber,secondNumber));
                 break;
             default:
                 System.out.println("Illegal Operation");
         }
     }
-
-    private static double add(double x, double y) { return x+y; }
-
-    private static double subtract(double x, double y) { return x-y; }
-
-    private static double multiply(double x, double y) { return x*y; }
-
-    private static double divide(double x, double y) { return x/y; }
 }
