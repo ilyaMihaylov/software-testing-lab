@@ -13,7 +13,7 @@ public class Calculator {
         double secondNumber = input.nextDouble();
 
         Messages.printMessage("Select operation: \"+\" for Addition, \"-\" for Subtraction \"*\" for Multiplication " +
-                "\"/\" for Division \"^\" for Exponentiation and \"^\" for Exponentiation: \"mod\" for Modulo:");
+                "\"/\" for Division \"^\" for Exponentiation and \"^\" for Exponentiation: \"modulo\" for Modulo:");
 
         switch (input.next()){
             case "+":
@@ -31,8 +31,8 @@ public class Calculator {
             case "^":
                 Messages.printResult(firstNumber, secondNumber, Operations.exponentiation(firstNumber, secondNumber), "^");
                 break;
-            case "mod":
-                Messages.printResult(firstNumber, secondNumber, Operations.modulo(firstNumber, secondNumber), "mod");
+            case "modulo":
+                Messages.printResult(firstNumber, secondNumber, Operations.modulo(firstNumber, secondNumber), "modulo");
                 break;
             default:
                 Messages.printMessage("Illegal Operation");
