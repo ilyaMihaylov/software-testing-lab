@@ -1,0 +1,101 @@
+Test cases for https://www.expedia.com/
+
+1)	Localization 
+
+Steps:
+
+1.	Go to https://www.expedia.com/
+2.	Change language at the top right corner of the page or select different country in “Global Sites” section at the end of the page  
+
+Expected result: The selected language applied to all pages of the site
+
+2)	My lists
+
+Steps:
+
+1.	Go to https://www.expedia.com/
+2.	Fill all field required to make booking and click search
+3.	Wait until search is finished 
+4.	Navigate to “My lists” section and click “See Recent Searches”
+
+Expected result: Current and all previous search results are displayed to the user
+
+3)	Sort & Filters
+
+Steps:
+
+1.	Go to https://www.expedia.com/
+2.	Fill all field required to make booking and click search
+3.	Wait until search is finished 
+4.	Select filters or/and sort type, apply them
+
+Expected result: Displayed results suit the filters and sorted by the selected criteria
+
+4)	Input lists
+
+Steps:
+
+1.	Go to https://www.expedia.com/
+2.	Start entering any value into “Flying from” or “Flying to”
+
+Expected result: Input displays a list of items found by the entered value
+
+5)	Date picker
+
+Steps:
+
+1.	Go to https://www.expedia.com/
+2.	Select “Departing” and “Returning” date
+
+Expected result: Can’t select date earlier than today's and “Returning” date can’t be earlier than “Departing”
+
+6)	Hotel booking dates
+
+Steps:
+
+1.	Go to https://www.expedia.com/
+2.	Select “Departing” and “Returning” date
+3.	Check “Add hotel”
+
+Expected result: “Check-in” and “Check-out” dates are the same as “Departing” and “Returning”
+
+7)	Validation
+
+Steps:
+
+1.	Go to https://www.expedia.com/
+2.	Enter invalid values or leave the fields blank
+
+Expected result: The page displays an error message and the border of the fields become red
+
+8)	Checkout page
+
+Steps:
+
+1.	Go to https://www.expedia.com/
+2.	Fill all field required to make booking and click search
+3.	Wait until search is finished 
+4.	Select ticket(s) 
+5.	Continue until checkout page
+
+Expected result: The checkout page showing ticket(s) selected on step 4
+
+9)	Hotels 
+
+Steps:
+
+1.	Go to https://www.expedia.com/
+2.	Fill all field required to make booking, check “Add hotel” and click search
+3.	Wait until search is finished 
+
+Expected result: The page showing hotels from the city selected in “Flying to” field
+
+10)	Tickets
+
+Steps:
+
+1.	Go to https://www.expedia.com/
+2.	Fill all field required to make booking and click search
+3.	Wait until search is finished 
+
+Expected result: The page is showing tickets with departure city selected in “Flying from” field, with arrival city selected in “Flying to” and selected date(s) are matching the one(s) on ticket selecting page
