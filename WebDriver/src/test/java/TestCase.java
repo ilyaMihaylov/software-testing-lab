@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class TestCase {
     @Test
     public void testListOfRecentSearches(){
-        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         WebDriverWait wait = new WebDriverWait(driver, 20);
 
@@ -32,7 +32,7 @@ public class TestCase {
         driver.findElement(By.id("aria-option-0")).click();
 
         driver.findElement(By.id("flight-departing-single-hp-flight")).click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class=\"datepicker-cal\"]")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class=\"datepicker-cal\"]")));
         driver.findElement(By.xpath("//button[@data-year=" + year + " and @data-month=" + month + " and @data-day=" + day + "]")).click();
 
         driver.findElement(By.xpath("//button[@class=\"btn-primary btn-action gcw-submit\"]")).click();
@@ -40,7 +40,9 @@ public class TestCase {
         driver.navigate().to(recentSearchesListUrl);
         System.out.println();
 
-        Assert.assertEquals(expectedRecentSearch, driver.findElement(By.xpath("//*[@class=\"group-title truncate\"]")).getText());
+        Assert.assertEquals(expectedRecentSearch, driver.findElement(By.xpath("//h3[@class=\"group-title truncate\"]")).getText());
+
         driver.quit();
+        driver = null;
     }
 }
