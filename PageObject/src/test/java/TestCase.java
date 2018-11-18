@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import pages.HomePage;
 
 import java.util.concurrent.TimeUnit;
 
@@ -15,7 +16,7 @@ public class TestCase {
         String url = "https://www.expedia.com/";
 
         if (null == driver) {
-            System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
             driver = new ChromeDriver();
             driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         }
