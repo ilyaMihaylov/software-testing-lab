@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage extends AbstractPage {
     private final String BASE_URL = "https://www.expedia.com/";
-    private final int WAIT_TIMEOUT = 10;
+    private final int WAIT_TIMEOUT = 30;
 
     @FindBy(id = "tab-flight-tab-hp")
     private WebElement flightsTabButton;

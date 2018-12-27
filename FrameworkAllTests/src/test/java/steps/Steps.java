@@ -192,6 +192,4 @@ public class Steps {
         ArrayList<String> tabsList = new ArrayList<String> (driver.getWindowHandles());
         driver.switchTo().window(tabsList.get(tabNumber));
     }
-
-
 }
